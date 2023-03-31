@@ -1,0 +1,161 @@
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#comment {
+    width: calc(100% - 2rem);
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#comment .cm {
+    background: #e9ebee;
+    outline: none;
+    user-select: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+#comment .comment-form, #comment .rep-cmt-form {
+    background: #e9ebee;
+    margin-bottom: 1rem;
+    border-left: 2px solid #6a5acd;
+}
+#comment .comment-form form, #comment .rep-cmt-form form {
+    display: flex;
+    justify-content: space-between;
+}
+#comment .comment-form form .content, #comment .rep-cmt-form form .content {
+    flex-grow: 1;
+}
+#comment .comment-form form .content input, #comment .comment-form form .content textarea, #comment .rep-cmt-form form .content input, #comment .rep-cmt-form form .content textarea {
+    border: 0;
+    background: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    color: #322e2f;
+}
+#comment .comment-form form .content textarea, #comment .rep-cmt-form form .content textarea {
+    display: block;
+    line-height: 40px;
+    resize: none;
+}
+#comment .comment-form form button.btn-comment, #comment .rep-cmt-form form button.btn-comment {
+    border: 0;
+    background: 0;
+    padding: 0.6rem;
+    flex-shrink: 0;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#comment .comment-form form button.btn-comment svg, #comment .rep-cmt-form form button.btn-comment svg {
+    stroke: #5890ff;
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    height: 100%;
+}
+#comment .comment-list .comment {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #6a5acd;
+}
+#comment .comment-list .comment:last-child {
+    margin-bottom: 0;
+}
+#comment .comment-list .comment:hover {
+    border-left: 2px solid #f6c23e;
+}
+#comment .comment-list .comment .cmt, #comment .comment-list .comment .rep-cmt {
+    display: flex;
+}
+#comment .comment-list .comment .cmt .cmt-avt, #comment .comment-list .comment .rep-cmt .cmt-avt {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 1rem -0.5rem #322e2f;
+    user-select: none;
+}
+#comment .comment-list .comment .cmt .cmt-avt img, #comment .comment-list .comment .rep-cmt .cmt-avt img {
+    display: block;
+}
+#comment .comment-list .comment .cmt .cmt-right, #comment .comment-list .comment .rep-cmt .cmt-right {
+    margin-left: 0.5rem;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-box, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-box {
+    background: #e9ebee;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-box h2.name, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-box h2.name {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-box h2.name a, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-box h2.name a {
+    color: #322e2f;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-box .cmt-content, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-box .cmt-content {
+    font-size: 15px;
+    font-weight: 500;
+    color: #322e2f;
+    opacity: 0.7;
+    display: table;
+    min-width: 200px;
+    max-width: 350px;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-box .num-like-cmt, #comment .comment-list .comment .cmt .cmt-right .cmt-box .num-like-rep-cmt, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-box .num-like-cmt, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-box .num-like-rep-cmt {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background: #12a4d9;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 24px;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-footer, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-footer {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #322e2f;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-footer a, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-footer a {
+    color: #322e2f;
+}
+#comment .comment-list .comment .cmt .cmt-right .cmt-footer a:hover, #comment .comment-list .comment .rep-cmt .cmt-right .cmt-footer a:hover {
+    color: #5890ff;
+}
+#comment .comment-list .comment .rep-cmt-form {
+    margin-top: 0.5rem;
+    margin-left: calc(40px + 0.5rem);
+}
+#comment .comment-list .comment .rep-cmt {
+    margin-top: 0.5rem;
+    margin-left: calc(40px + 0.5rem);
+}
+.cmt-footer,
+#comment .comment-list .comment .rep-cmt .cmt-right .cmt-footer {
+    width: 300px;
+}
+
+.cmt-footer .cmt-btn-rep{
+    width: 70px;
+
+}
