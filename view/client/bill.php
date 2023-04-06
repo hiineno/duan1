@@ -41,7 +41,7 @@
                                 <td>
                                     <a href="index.php?act=detail_bill&cart_id=<?=$item['cart_id'] ?>">Chi tiết</a>
                                     |
-                                    <a href="index.php?act=detail_bill&cart_id=<?=$item['cart_id'] ?>">Hủy</a>
+                                    <a href="index.php?act=cancel-product&cart_id=<?=$item['cart_id'] ?>">Hủy</a>
                                 </td>
                             </tr>
                         <?php endforeach;

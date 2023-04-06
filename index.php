@@ -143,6 +143,9 @@ if (isset($_GET['act'])) {
             require_once "./view/client/cart.php";
             require_once "./view/client/footer_client.php";
             break;
+        case 'cancel-product':
+            require_once "./control/client/cancel-product.php";
+            break;
         case 'delete_cart':
             require_once "./control/client/delete_cart.php";
             break;

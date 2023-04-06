@@ -48,6 +48,8 @@ if (isset($_POST['submit_date_ship'])) {
                     <option value="Đang xủ lí">Đang xử lí</option>
                     <option value="Đang giao hàng">Đang giao hàng</option>
                     <option value="Đã nhận hàng">Đã nhận hàng</option>
+                    <option value="Đã nhận hàng">Đã hủy hàng</option>
+                    
                 </select>
                 <input type="submit" name="submit_status" value="Thay đổi ">
             </form>

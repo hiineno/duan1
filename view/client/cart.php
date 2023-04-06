@@ -222,16 +222,7 @@ if (isset($_POST['order'])) {
                                     }
                                     ?>
                                 </ul>
-
-                                <!-- <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a> -->
-                                    <?php 
-                                        if(empty($_SESSION['username'])){ ?>
-                                            <input type="submit" class="primary-btn" name="order" value="Đặt hàng">
-                                      <?php  }
-                                      else { ?>
-                                           <a onclick=" confirm('Bạn phải đăng nhập mới đặt được hàng')" href=""><input type="" class="primary-btn" name="" value="Đặt hàng"></a>
-                                      <?php }
-                                    ?>
+                                    <input type="submit" class="primary-btn" name="order" value="Đặt hàng">
                             </div>
                         </div>
                     </div>

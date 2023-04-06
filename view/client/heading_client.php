@@ -66,7 +66,7 @@
                 <?php
                             } else {
                 ?>
-                    <img src="./src/imgs/img_avatar/<?= $row['user_avatar'] ?>" class="avatar-username" alt=""><?= $username ?>
+                    <i class="fa fa-user"><?= $username ?></i></a>
                 <?php
                             }
                 ?>
@@ -144,7 +144,7 @@
                                 <?php
                                             } else {
                                 ?>
-                                    <img src="./src/imgs/img_avatar/<?= $row['user_avatar'] ?>" class="avatar-username" alt=""><?= $username ?>
+                                    <i class="fa fa-user"><?= $username ?></i></a>
                                 <?php
                                             }
                                 ?>
@@ -193,15 +193,18 @@
   
                         ?>
                     
-                        <ul>
+                    <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span></span></a></li>
-                            <li><a href="index.php?act=cart"><i class="fa fa-shopping-bag"></i> <span>
-                                <?php
+                            <li><a href="index.php?act=cart"><i class="fa fa-shopping-bag"></i>
+                            <?php
                                 if(isset($_SESSION['cart'])){
-                                    $count = count($_SESSION['cart']);
-                                    }
-
+                                $count = count($_SESSION['cart']);
+                                }
                                  ?>
+                            <span>
+                                <?php
+                                echo $count;
+                               ?> 
                             </span></a></li>
                             <li><a href="index.php?act=bill"><i class="fa-solid fa-truck"></i>
                             <span>
@@ -211,7 +214,9 @@
                                 }
                                 $sql = "SELECT count(cart_id) AS count_id FROM cart WHERE user_id LIKE '$username'";
                                 $query = getAll($sql);
-                                echo $query['count_id'];
+                                foreach($query as $row){
+                                    echo $row['count_id'];
+                                }
                                 ?>
                             </span>
                         </a></li>

@@ -146,7 +146,7 @@
                                 <?php
                                             } else {
                                 ?>
-                                    <img src="./src/imgs/img_avatar/<?= $row['user_avatar'] ?>" width="30px" height="30px" alt=""><?= $username ?>
+                                     <i class="fa fa-user"><?= $username ?></i></a>
                                 <?php
                                             }
                                 ?>
@@ -197,12 +197,16 @@
                     <div class="header__cart">
                     <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span></span></a></li>
-                            <li><a href="index.php?act=cart"><i class="fa fa-shopping-bag"></i> <span>
-                                <?php
+                            <li><a href="index.php?act=cart"><i class="fa fa-shopping-bag"></i>
+                            <?php
                                 if(isset($_SESSION['cart'])){
                                 $count = count($_SESSION['cart']);
                                 }
                                  ?>
+                            <span>
+                                <?php
+                                echo $count;
+                               ?> 
                             </span></a></li>
                             <li><a href="index.php?act=bill"><i class="fa-solid fa-truck"></i>
                             <span>
